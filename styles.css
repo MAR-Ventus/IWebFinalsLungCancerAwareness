@@ -109,8 +109,10 @@ ul {
 }
 
 .mainnav li {
+  flex: 1;
   color: #ffffff;
   font-size: 14px;
+  text-align: center;
 }
 
 .mainnav a {
@@ -437,6 +439,10 @@ ul {
 
   .mainnav ul {
     padding: 0 8px;
+  }
+
+  .mainnav li {
+    flex: 1 1 50%;
   }
 
   .mainnav a {
