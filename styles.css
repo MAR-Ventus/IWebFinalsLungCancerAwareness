@@ -355,6 +355,12 @@ ul {
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
+
+  transform: 0.3s ease;
+}
+
+.updates-btn:hover {
+  background: #8bc540;
 }
 
 .privacy-text {
