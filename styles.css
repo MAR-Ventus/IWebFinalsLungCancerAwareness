@@ -8,13 +8,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #333333;
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
 .page {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  background: #ffffff;
 }
 
 img {
@@ -136,7 +137,7 @@ ul {
 .hero {
   display: flex;
   align-items: center;
-  background:  #1c2b4a;
+  background: #1c2b4a;
   padding: 48px 32px;
 }
 
@@ -197,10 +198,11 @@ ul {
   position: relative;
   transition: transform 0.3s ease;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .category-tab:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
   z-index: 3;
 }
 
@@ -212,7 +214,8 @@ ul {
 .category-description {
   font-size: 13px;
   color: #555555;
-  padding: 20px 32px 0;
+  padding: 32px 32px 0;
+  line-height: 1.6;
 }
 
 .card-grid {
@@ -226,21 +229,24 @@ ul {
 .card {
   width: calc((100% - 48px) / 3);
   background: #ffffff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
   z-index: 3;
 }
 
 .card-media {
-  height: 130px;
+  height: 180px;
   background: #d9d9d9;
   overflow: hidden;
 }
@@ -253,34 +259,41 @@ ul {
 }
 
 .card-body {
-  padding: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-body a {
   text-decoration: none;
+  margin-top: auto;
 }
 
 .card-body h3 {
-  font-size: 16px;
+  font-size: 18px;
   color: #1c2b4a;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .card-body p {
   font-size: 13px;
-  line-height: 1.5;
-  color: #555555;
-  margin-bottom: 12px;
-  
+  line-height: 1.55;
+  color: #444444;
+  margin-bottom: 20px;
+  flex-grow: 1;
 }
 
 .read-more {
   display: block;
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
-  color: #1645c0;
+  color: #3b82f6;
+  letter-spacing: 0.5px;
 }
+
 .read-more:hover {
   text-decoration: underline;
 }
@@ -291,7 +304,7 @@ ul {
 
 .donate-panel {
   width: 50%;
-  background:  #1c2b4a;
+  background: #1c2b4a;
   color: #ffffff;
   padding: 48px 56px;
 }
@@ -316,11 +329,11 @@ ul {
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .donate-btn:hover {
-  transform: scale(1.1); 
+  transform: scale(1.05);
 }
 
 .newsletter-panel {
@@ -377,23 +390,20 @@ ul {
 
 .updates-btn:hover {
   background: #8bc540;
-}
-
-.newsletter-form input:user-invalid {
-  border-color: #c0392b;
-  outline: none;
+  color: #1c2b4a;
 }
 
 .privacy-text {
-  font-size: 9px !important;
-  color: #aaaaaa !important;
-  margin-top: 8px !important;
+  font-size: 10px !important;
+  color: #888888 !important;
+  margin-top: 10px !important;
   margin-bottom: 0 !important;
   max-width: 380px;
 }
 
-.privacy-text span {
+.privacy-text a {
   color: #5376c9;
+  text-decoration: underline;
 }
 
 .footer {
@@ -441,6 +451,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 .footer-bottom {
