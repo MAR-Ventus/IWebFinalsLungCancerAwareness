@@ -46,8 +46,17 @@ ul {
   letter-spacing: -6px;
 }
 
+.logo-mark a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-mark a:hover {
+  color: #8bc540;
+}
+
 .logo-text {
-  font-size: 12px;
+  font-size: 1.00rem;
   font-weight: bold;
   line-height: 1.2;
   color: #1c2b4a;
